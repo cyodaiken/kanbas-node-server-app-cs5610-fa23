@@ -23,8 +23,12 @@ const sessionOptions = {
     secret: "any string",
     resave: false,
     saveUninitialized: false,
+    proxy: true,
     cookie: {
-        sameSite: 'none'
+        sameSite: 'none',
+        secure: true,
+        maxAge: 10000000000
+
     }
 };
 
