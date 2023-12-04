@@ -23,6 +23,9 @@ const sessionOptions = {
     secret: "any string",
     resave: false,
     saveUninitialized: false,
+    cookie: {
+        sameSite: 'none'
+    }
 };
 
 if (process.env.NODE_ENV !== "development") {
